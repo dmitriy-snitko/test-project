@@ -1,0 +1,15 @@
+.title {
+  @include font(24px, 300, 34px);
+  color: $title-color;
+}
+
+.section__title {
+  margin-bottom: 40px;
+
+  @include font(32px, 300, 44px);
+  color: $title-color;
+
+  &--invers {
+    color: #FFFFFF;
+  }
+}

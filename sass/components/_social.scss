@@ -1,0 +1,33 @@
+.social {
+  position: absolute;
+  bottom: 383px;
+  right: 0;
+
+  width: 150px;
+
+  &__title {
+    margin-bottom: 26px;
+
+    @include font(14px, 700, 18px);
+    text-transform: uppercase;
+
+    color: $primery-text-color;
+  }
+
+  &__icon-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    bottom: 0;
+    right: 267px;
+    width: 333px;
+
+    &__icon-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

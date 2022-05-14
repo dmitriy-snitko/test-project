@@ -1,0 +1,38 @@
+.posts {
+  margin-bottom: 70px;
+
+  & .button {
+    width: 100%;
+    margin-bottom: 70px;
+
+    @media screen and(min-width: 1200px) {
+      width: 260px;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and(min-width: 1200px) {
+    & .container {
+      display: flex;
+    }
+
+    &__container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      width: 800px;
+
+      &::after {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        content: '';
+        width: 1px;
+        height: 100%;
+        background: $line-color;
+      }
+    }
+  }
+}

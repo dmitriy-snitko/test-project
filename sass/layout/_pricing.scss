@@ -1,0 +1,158 @@
+.pricing {
+  padding: 60px 0 44px 0;
+
+  color: $primery-text-color;
+  background: $dark-bg-color;
+
+  &__card-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1060px;
+    margin-bottom: 36px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 315px;
+    height: 340px;
+
+    padding: 45px 55px;
+
+    border: 1px solid #EBECED;
+    border-radius: 6px;
+
+    text-align: center;
+
+    background: $primery-lite-color;
+
+    &:hover {
+      outline: 4px solid $active-color;
+    }
+
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 30px;
+
+    @include font(14px, 700, 18px);
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      bottom: -14px;
+      left: 50%;
+      transform: translate(-50%);
+
+      display: block;
+      width: 24px;
+      height: 2px;
+
+      background: $accent-color;
+    }
+  }
+
+  &__value {
+    position: relative;
+    @include font(56px, 300, 66px);
+    color: $title-color;
+
+    margin-bottom: 35px;
+
+    &::after {
+      position: absolute;
+      bottom: -19px;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: $line-color;
+    }
+  }
+
+  &__text {
+    @include font(14px, 400, 22px)
+  }
+
+  &__max-price {
+    margin-right: 8px;
+    text-decoration: line-through;
+    color: $max-price-color;
+  }
+
+  &__save {
+    font-weight: 700;
+  }
+
+  .section__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  sup,
+  sub {
+    @include font(24px, 300, 32px)
+  }
+
+  sup {
+    margin-right: 8px;
+  }
+
+  sub {
+    margin-left: 3px;
+  }
+
+  input {
+    position: fixed;
+  }
+
+  .button {
+    margin-top: auto;
+    width: 205px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding: 100px 0 57px 0;
+
+    &__card-wrap {
+      margin-bottom: 54px;
+      padding: 0 10px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: auto;
+    }
+
+    &__card {
+      width: 380px;
+    }
+
+    .section__title {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+input:checked + .pricing {
+  &__card {
+    outline: 4px solid $accent-color;
+
+    &:hover {
+      outline: 4px solid $active-color;
+    }
+  }
+
+  @media screen and(min-width: 1200px) {
+    &__card {
+      height: 380px;
+      padding: 59px 0;
+    }
+  }
+}

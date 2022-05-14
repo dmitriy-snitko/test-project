@@ -1,0 +1,31 @@
+.button {
+  height: 40px;
+  padding: 0 22px;
+  margin: 0;
+
+  border: 1px solid $accent-color;
+  border-radius: 30px;
+  outline: none;
+
+  @include font(14px, 500, 18px);
+  text-transform: uppercase;
+
+  background-color: transparent;
+  color: $accent-color;
+
+  &--accent {
+    border: none;
+
+    color: #FFFFFF;
+    background: $button-color;
+  }
+
+  &:hover {
+    border: none;
+
+    cursor: pointer;
+
+    color: #FFFFFF;
+    background: $active-button-color;
+  }
+}

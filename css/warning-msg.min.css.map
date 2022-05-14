@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,AAAC,CACX,UAAU,CAAE,GAAG,CAChB",
+    "sources": [
+        "../sass/components/warning-msg.scss"
+    ],
+    "names": [],
+    "file": "warning-msg.min.css"
+}

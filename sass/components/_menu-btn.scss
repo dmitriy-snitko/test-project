@@ -1,0 +1,29 @@
+.menu-btn {
+  position: absolute;
+  top: 28px;
+  left: 12px;
+
+  border: none;
+
+  background: transparent;
+
+  &__icon-cross {
+    display: none;
+  }
+
+  &.is-open &__icon-cross{
+    display: block;
+  }
+
+  &.is-open &__icon-menu {
+    display: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media screen and(min-width: 1200px) {
+    display: none;
+  }
+}

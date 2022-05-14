@@ -1,0 +1,27 @@
+.container {
+  width: 335px;
+  height: 100%;
+  margin: 0 auto;
+
+  header & {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 25px;
+  }
+
+  &--small {
+    width: 315px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+
+    header & {
+      align-items: center;
+    }
+  }
+
+  footer & {
+    position: relative;
+  }
+}
