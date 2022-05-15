@@ -364,6 +364,10 @@ input:checked + .pricing__card:hover {
   color: #889099;
 }
 
+.footer__content {
+  margin-top: 54px;
+}
+
 .footer__nav {
   margin-bottom: 40px;
 }
@@ -555,7 +559,6 @@ header .logo {
 footer .logo {
   display: block;
   margin-top: 0;
-  margin-bottom: 54px;
 }
 
 @media screen and (min-width: 1200px) {
