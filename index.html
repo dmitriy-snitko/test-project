@@ -33,10 +33,19 @@
 
   <header>
     <div class="container">
-      <a href="/" class="logo link">company name</a>
-      <!-- <a href="/" class="logo link">
-        <img src="./img/logo/logo.png" alt="">
-      </a> -->
+      <a href="/" class="logo link">
+        <picture>
+          <source
+            srcset="./img/logo/logo.svg"
+            media="(min-width: 1200px)"
+          >
+          <img
+            src="./img/logo/logo-mobile.svg"
+            srcset="./img/logo/logo-mobile.svg"
+            alt="Company logo"
+          >
+        </picture>
+      </a>
 
       <button class="menu-btn" id="menu-btn" type="button">
         <svg class="menu-btn__icon" width="24" height="16">
@@ -473,7 +482,12 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="logo">Company Name</p>
+      <a href="/" class="logo link">
+        <picture>
+          <source srcset="./img/logo/logo.svg" media="(min-width: 1200px)">
+          <img src="./img/logo/logo-mobile.svg" srcset="./img/logo/logo-mobile.svg" alt="Company logo">
+        </picture>
+      </a>
       <div class="footer__content">
         <nav class="footer__nav">
           <ul class="footer__list list">
