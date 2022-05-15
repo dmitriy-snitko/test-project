@@ -1,5 +1,9 @@
 body {
   font-family: $main-font;
+
+  &.is-open {
+    overflow: hidden;
+  }
 }
 
 h1,
